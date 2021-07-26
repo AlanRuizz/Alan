@@ -1,0 +1,91 @@
+.nav{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  right: auto;
+  padding-left: 5%;
+  bottom: 10%;
+    
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 4vh;
+    font-size: 16px;
+    padding: .2em;
+    font-weight: 700; 
+}
+
+a{
+    color: white;
+    text-decoration: none;  
+}
+
+.Home-link{
+    width: 49px;
+}
+
+.about-link{
+    width: 50px;
+}
+
+.Home-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    transition: 1s;
+}
+.Home-link:hover::after{
+    width: 100%;
+    color: gold;
+}
+
+.Home-link:hover{
+    color: gold;
+}
+
+.about-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    transition: 1s;
+}
+.about-link:hover::after{
+    width: 100%;
+    color: gold;
+}
+
+.about-link:hover{
+    color: gold;
+}
+
+.Experience-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    transition: 1s;
+}
+.Experience-link:hover::after{
+    width: 100%;
+    color: gold;
+}
+
+.Experience-link:hover{
+    color: gold;
+}
+
+@media only screen and (max-width: 700px){
+
+    .nav{
+        display: none;
+    }
+}
